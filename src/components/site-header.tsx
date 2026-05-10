@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const nav = [
   { href: "#expertise", label: "专长" },
@@ -27,17 +28,20 @@ export function SiteHeader() {
           >
             刘欢
           </a>
-          <nav className="flex gap-6 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-8 [&::-webkit-scrollbar]:hidden">
-            {nav.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="shrink-0 text-sm text-[var(--text-tertiary)] transition-colors hover:text-[var(--text-primary)]"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
+          <div className="flex min-w-0 items-center gap-4 sm:gap-6">
+            <nav className="flex gap-6 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-8 [&::-webkit-scrollbar]:hidden">
+              {nav.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="shrink-0 text-sm text-[var(--text-tertiary)] transition-colors hover:text-[var(--text-primary)]"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </motion.header>

@@ -78,10 +78,9 @@ export function ExpertiseSection() {
             <motion.li
               key={card.title}
               variants={itemVariants}
-              className="glass-panel hover-lift group relative flex h-full min-h-0 flex-col overflow-hidden rounded-3xl p-6 sm:p-7"
+              className="glass-panel hover-lift relative flex h-full min-h-0 flex-col overflow-hidden rounded-3xl p-6 sm:p-7"
             >
-              <div className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-[var(--glow)] blur-2xl transition-opacity group-hover:opacity-100" />
-              <div className="relative mb-5 grid size-11 shrink-0 place-items-center rounded-2xl border border-white/[0.08] bg-white/[0.04] sm:mb-6 sm:size-12">
+              <div className="relative mb-5 grid size-11 shrink-0 place-items-center rounded-2xl border border-[var(--surface-border)] bg-[var(--surface-soft)] sm:mb-6 sm:size-12">
                 <card.icon
                   className="h-5 w-5 text-[var(--accent)] sm:h-6 sm:w-6"
                   strokeWidth={1.35}

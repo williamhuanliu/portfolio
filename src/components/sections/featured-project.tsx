@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Sparkles } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const REPO = "https://github.com/tencentmusic/supersonic";
@@ -42,12 +42,9 @@ export function FeaturedProjectSection() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
           className="glass-panel relative overflow-hidden rounded-[2rem] p-8 sm:p-10 md:p-12"
         >
-          <div className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-[var(--glow)] blur-3xl" />
-
           <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">
             <div className="max-w-2xl space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[var(--border-subtle)] bg-[var(--bg-base)]/50 px-3 py-1 font-mono text-[11px] tracking-wider text-[var(--accent)] uppercase">
-                <Sparkles className="h-3.5 w-3.5" strokeWidth={1.5} />
+              <div className="inline-flex items-center rounded-full border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-3 py-1 font-mono text-[11px] tracking-wide text-[var(--text-secondary)]">
                 前端负责人 · 腾讯音乐
               </div>
               <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -59,9 +56,11 @@ export function FeaturedProjectSection() {
               </p>
               <div className="grid max-w-xl grid-cols-3 gap-3">
                 {["Headless BI", "ChatBI", "Data Agent"].map((item) => (
-                  <div key={item} className="rounded-2xl border border-white/[0.07] bg-white/[0.035] p-4">
-                    <p className="font-mono text-xs text-[var(--accent)]">Module</p>
-                    <p className="mt-1 text-sm text-[var(--text-primary)]">{item}</p>
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-[var(--surface-border-faint)] bg-[var(--surface-soft)] p-4"
+                  >
+                    <p className="font-mono text-sm text-[var(--text-primary)]">{item}</p>
                   </div>
                 ))}
               </div>

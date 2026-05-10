@@ -85,7 +85,7 @@ export function SkillsSection() {
                 {group.items.map((label) => (
                   <span
                     key={label}
-                    className="rounded-full border border-white/[0.06] bg-[var(--bg-base)]/70 px-3 py-1.5 text-xs leading-none text-[var(--text-secondary)]"
+                    className="rounded-full border border-[var(--surface-border-faint)] bg-[var(--chip-bg)] px-3 py-1.5 text-xs leading-none text-[var(--text-secondary)]"
                   >
                     {label}
                   </span>

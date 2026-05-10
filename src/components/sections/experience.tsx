@@ -150,7 +150,7 @@ export function ExperienceSection() {
               roleSub="前端架构负责人"
             />
             <CardShell delay={0.06}>
-              <p className="mb-6 inline-flex rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1 text-xs font-medium text-[var(--text-primary)]">
+              <p className="mb-6 inline-flex rounded-full border border-[var(--surface-border)] bg-[var(--surface-soft)] px-3 py-1 text-xs font-medium text-[var(--text-primary)]">
                 核心业务：企业级 BI 平台与 AI Data Agent
               </p>
               <BulletList items={tencentCoreBullets} />
@@ -185,7 +185,7 @@ export function ExperienceSection() {
             <CardShell delay={0.06}>
               <div className="space-y-9">
                 <div>
-                  <h3 className="inline-flex rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1 text-xs font-medium text-[var(--text-primary)]">
+                  <h3 className="inline-flex rounded-full border border-[var(--surface-border)] bg-[var(--surface-soft)] px-3 py-1 text-xs font-medium text-[var(--text-primary)]">
                     政务级 BI 系统：智慧城市大数据驾驶舱
                   </h3>
                   <div className="mt-5">
@@ -193,7 +193,7 @@ export function ExperienceSection() {
                   </div>
                 </div>
                 <div className="border-t border-[var(--border-subtle)] pt-8">
-                  <h3 className="inline-flex rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1 text-xs font-medium text-[var(--text-primary)]">
+                  <h3 className="inline-flex rounded-full border border-[var(--surface-border)] bg-[var(--surface-soft)] px-3 py-1 text-xs font-medium text-[var(--text-primary)]">
                     智慧教育 APP
                   </h3>
                   <div className="mt-5">

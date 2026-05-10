@@ -31,7 +31,7 @@ export function EducationSection() {
             transition={{ duration: 0.5 }}
             className="glass-panel hover-lift flex gap-5 rounded-3xl p-6 sm:p-8"
           >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[var(--border-subtle)] bg-white/[0.04]">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[var(--surface-border)] bg-[var(--surface-soft)]">
               <GraduationCap className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
             </div>
             <div>
@@ -48,7 +48,7 @@ export function EducationSection() {
             transition={{ duration: 0.5, delay: 0.06 }}
             className="glass-panel hover-lift flex gap-5 rounded-3xl p-6 sm:p-8"
           >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[var(--border-subtle)] bg-white/[0.04]">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[var(--surface-border)] bg-[var(--surface-soft)]">
               <Languages className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
             </div>
             <div>

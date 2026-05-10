@@ -47,10 +47,10 @@ export function ProfilePhoto({ className = "" }: { className?: string }) {
       <div
         className="pointer-events-none absolute inset-[-2px] z-0 rounded-full opacity-50 blur-md"
         style={{
-          background: "linear-gradient(135deg, rgba(129,140,248,0.35), transparent 70%)",
+          background: "var(--photo-glow)",
         }}
       />
-      <div className="relative z-10 size-full overflow-hidden rounded-full border border-white/10 bg-[var(--bg-card)] shadow-lg shadow-black/40">
+      <div className="relative z-10 size-full overflow-hidden rounded-full border border-[var(--photo-border)] bg-[var(--bg-card)] shadow-[var(--photo-shadow)]">
         <img
           key={activeSrc}
           src={activeSrc}

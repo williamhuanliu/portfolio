@@ -12,6 +12,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const themeInitScript = `
+(() => {
+  try {
+    const stored = window.localStorage.getItem("portfolio-theme");
+    if (stored === "light" || stored === "dark") {
+      document.documentElement.dataset.theme = stored;
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+  } catch {
+    document.documentElement.removeAttribute("data-theme");
+  }
+})();
+`;
+
 export const metadata: Metadata = {
   title: "刘欢 · 前端架构与工程化",
   description:
@@ -39,8 +54,12 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-full flex flex-col bg-[var(--bg-base)] text-[var(--text-primary)]">
         {children}
       </body>

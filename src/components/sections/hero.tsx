@@ -51,9 +51,9 @@ export function HeroSection() {
                 className="mt-6 font-mono text-xs text-[var(--text-tertiary)] sm:text-sm"
               >
                 <Link href="tel:13682370883" className="transition-colors hover:text-[var(--accent)]">
-                  13682370883
+                  136 8237 0883
                 </Link>
-                <span className="mx-2 text-white/15">|</span>
+                <span className="mx-2 text-[var(--separator-muted)]">|</span>
                 <Link
                   href="mailto:liuhuan_0708@163.com"
                   className="transition-colors hover:text-[var(--accent)]"
