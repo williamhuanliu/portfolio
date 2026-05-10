@@ -1,0 +1,54 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
+import Link from "next/link";
+
+export function ContactSection() {
+  return (
+    <section
+      id="contact"
+      className="section-shell border-t border-[var(--border-subtle)]"
+    >
+      <div className="section-container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="glass-panel relative overflow-hidden rounded-[2rem] px-8 py-14 text-center sm:px-16"
+        >
+          <div className="pointer-events-none absolute left-1/2 top-0 h-40 w-80 -translate-x-1/2 rounded-full bg-[var(--glow)] blur-3xl" />
+          <p className="section-kicker relative">Contact</p>
+          <h2 className="relative mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+            联系方式
+          </h2>
+          <p className="relative mx-auto mt-4 max-w-md text-sm text-[var(--text-secondary)] leading-relaxed">
+            如需进一步沟通，可通过邮件或电话与我联系。
+          </p>
+
+          <div className="relative mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
+            <Link
+              href="mailto:liuhuan_0708@163.com"
+              className="inline-flex max-w-full items-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.04] px-5 py-3 text-[var(--text-primary)] transition-colors hover:border-[var(--border-glow)] hover:text-[var(--accent)]"
+            >
+              <Mail className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
+              <span className="truncate font-mono text-sm tracking-wide sm:text-base">
+                liuhuan_0708@163.com
+              </span>
+            </Link>
+            <Link
+              href="tel:13682370883"
+              className="inline-flex max-w-full items-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.04] px-5 py-3 text-[var(--text-primary)] transition-colors hover:border-[var(--border-glow)] hover:text-[var(--accent)]"
+            >
+              <Phone className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
+              <span className="font-mono text-sm tracking-wide sm:text-base">
+                13682370883
+              </span>
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
