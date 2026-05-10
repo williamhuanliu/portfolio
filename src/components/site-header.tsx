@@ -1,10 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const nav = [
-  { href: "#expertise", label: "能力" },
+  { href: "#expertise", label: "专长" },
   { href: "#experience", label: "经历" },
   { href: "#project", label: "开源" },
   { href: "#skills", label: "技能" },
@@ -22,21 +21,21 @@ export function SiteHeader() {
     >
       <div className="px-5 sm:px-8">
         <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between">
-          <Link
+          <a
             href="#"
             className="text-sm font-medium tracking-tight text-[var(--text-primary)] transition-colors hover:text-[var(--accent)]"
           >
             刘欢
-          </Link>
+          </a>
           <nav className="flex gap-6 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-8 [&::-webkit-scrollbar]:hidden">
             {nav.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className="shrink-0 text-sm text-[var(--text-tertiary)] transition-colors hover:text-[var(--text-primary)]"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
         </div>
