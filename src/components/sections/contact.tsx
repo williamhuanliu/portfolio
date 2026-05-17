@@ -29,12 +29,12 @@ export function ContactSection() {
 
           <div className="relative mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
             <Link
-              href="mailto:liuhuan_0708@163.com"
+              href="mailto:williamhuanliu@gmail.com"
               className="inline-flex max-w-full items-center gap-3 rounded-full border border-[var(--surface-border)] bg-[var(--surface-soft)] px-5 py-3 text-[var(--text-primary)] transition-colors hover:border-[var(--border-glow)] hover:text-[var(--accent)]"
             >
               <Mail className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
               <span className="truncate font-mono text-sm tracking-wide sm:text-base">
-                liuhuan_0708@163.com
+                williamhuanliu@gmail.com
               </span>
             </Link>
             <Link

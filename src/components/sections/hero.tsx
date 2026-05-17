@@ -59,10 +59,10 @@ export function HeroSection() {
                 </Link>
                 <span className="mx-2 text-[var(--separator-muted)]">|</span>
                 <Link
-                  href="mailto:liuhuan_0708@163.com"
+                  href="mailto:williamhuanliu@gmail.com"
                   className="transition-colors hover:text-[var(--accent)]"
                 >
-                  liuhuan_0708@163.com
+                  williamhuanliu@gmail.com
                 </Link>
               </motion.p>
 
