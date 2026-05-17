@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "title": "Liu Huan · Front-end Architecture & Engineering",
+    "description": "Liu Huan: 10+ years in front-end and architecture; front-end lead for Tencent Music's open-source Supersonic ChatBI. Former senior front-end at Ping An Smart City. B.A. from Xi'an University of Finance and Economics. Focus areas include platform engineering, BI, open source, and AI agents.",
+    "keywords": [
+      "front-end architecture",
+      "Tencent Music",
+      "Supersonic",
+      "ChatBI",
+      "Ping An Smart City",
+      "platform engineering",
+      "BI",
+      "AI Agent",
+      "Apache Superset",
+      "React Native",
+      "Three.js"
+    ]
+  },
+  "nav": {
+    "expertise": "Expertise",
+    "experience": "Experience",
+    "project": "Open Source",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Front-end Architecture · Platform Engineering",
+    "name": "Liu Huan",
+    "title": "Front-end Architecture & Platform Engineering",
+    "role": "Senior Front-end Engineer / Front-end Architecture Lead",
+    "bio1": "Over 10 years in front-end development and architecture, with long-term involvement in data platforms, BI, and complex business systems—full lifecycle experience taking large-scale products from 0 to 1.",
+    "bio2Prefix": "Front-end lead for Tencent Music's open-source ChatBI project",
+    "bio2Suffix": "; hands-on delivery across platform engineering, BI, and AI Data Agents, including LLM workflow orchestration for analytics scenarios.",
+    "ctaExperience": "Experience",
+    "ctaProject": "Open Source",
+    "ctaExpertise": "Expertise",
+    "scrollAria": "Scroll down"
+  },
+  "expertise": {
+    "kicker": "Expertise",
+    "title": "Core Strengths",
+    "subtitle": "Product planning, interaction design, and engineering in one flow—shipping complex data capabilities in a clear, scalable way.",
+    "items": [
+      {
+        "title": "Complex Platform Architecture",
+        "desc": "Led front-end architecture for data platforms and BI products; built a schema-driven visualization system supporting multi-line analytics."
+      },
+      {
+        "title": "AI Data Agent",
+        "desc": "Designed agent workflow engines connecting data retrieval, chart matching, and report generation to automate analytics pipelines."
+      },
+      {
+        "title": "LLM Workflows",
+        "desc": "Connected semantic layers, queries, and presentation in analytics—improving orchestration UX, stability, and control for large models."
+      },
+      {
+        "title": "Open Source Leadership",
+        "desc": "Front-end lead for Tencent Music's Supersonic open-source project—ChatBI product experience, architecture, and community maintainability."
+      }
+    ]
+  },
+  "experience": {
+    "kicker": "Experience",
+    "title": "Work Experience",
+    "subtitle": "At Tencent Music: enterprise BI, AI Data Agents, and open-source Supersonic. Previously at Ping An Smart City: government BI and cross-platform smart education apps.",
+    "tencent": {
+      "period": "Aug 2020 — Present",
+      "company": "Tencent Music",
+      "role": "Senior Front-end Engineer",
+      "roleSub": "Front-end Architecture Lead",
+      "coreTag": "Core: Enterprise BI Platform & AI Data Agent",
+      "bullets": [
+        "Product: Owned core requirements and interaction prototypes; aligned technical solutions with business goals.",
+        "Platform: Built enterprise BI front-end and schema-driven visualization components for multi-line analytics.",
+        "Agent loop: Designed workflow engines linking retrieval, chart matching, and report generation."
+      ],
+      "ossTitle": "Open Source: Supersonic Front-end Lead",
+      "ossBullets": [
+        "Product: Defined open-source roadmap and releases; continuously improved ChatBI UX.",
+        "Architecture: Headless BI with semantic-model-driven configuration; decoupled business logic from presentation.",
+        "AI interaction: Conversational analytics with streaming, multi-turn context, and chart recommendations."
+      ]
+    },
+    "pingan": {
+      "period": "Aug 2016 — Jul 2020",
+      "company": "Ping An Smart City",
+      "role": "Senior Front-end Engineer",
+      "biTag": "Government BI: Smart City Data Cockpit",
+      "biBullets": [
+        "Refactor: Extended Apache Superset plugins, layout engine, and exploration modules for self-service analytics.",
+        "Visualization: Custom 3D and dynamic charts with Three.js and D3.js—balancing expressiveness and render performance."
+      ],
+      "appTag": "Smart Education App",
+      "appBullets": [
+        "Cross-platform: Built React Native app architecture from scratch; shipped iOS and Android.",
+        "Performance: Tuned render cycles and native bridges; fixed long-list jank and media loading bottlenecks."
+      ]
+    },
+    "earlier": {
+      "kicker": "Earlier",
+      "title": "Earlier Roles",
+      "period": "Jul 2012 — Aug 2016",
+      "roles": [
+        {
+          "period": "Aug 2014 — Aug 2016",
+          "org": "Shanghai Qifu Network Technology",
+          "role": "Web Front-end Developer",
+          "desc": "Delivered enterprise web applications end to end."
+        },
+        {
+          "period": "Jun 2013 — Jul 2014",
+          "org": "Shanghai Yuetu Network Technology",
+          "role": "Unity3D Mobile Game Developer",
+          "desc": "Implemented core gameplay logic."
+        },
+        {
+          "period": "Jul 2012 — Jun 2013",
+          "org": "Shanghai Micro Electronics Equipment",
+          "role": "C++ Software Developer",
+          "desc": "Developed control software for semiconductor precision equipment."
+        }
+      ]
+    }
+  },
+  "project": {
+    "kicker": "Open Source",
+    "title": "Supersonic · ChatBI",
+    "subtitlePrefix": "Tencent Music's open-source ChatBI project combining Headless BI and conversational analytics. See",
+    "subtitleLink": "Experience",
+    "subtitleSuffix": " for full scope and architecture.",
+    "badge": "Front-end Lead · Tencent Music",
+    "heading": "Semantic-model-driven conversational analytics",
+    "desc": "Led feature planning, release roadmap, overall front-end architecture, and conversational analytics UX—dynamic configuration driven by semantic models and presentation decoupling under Headless BI.",
+    "tags": ["Headless BI", "ChatBI", "Data Agent"],
+    "viewRepo": "View repository",
+    "relatedExperience": "Related experience"
+  },
+  "skills": {
+    "kicker": "Stack",
+    "title": "Core Skills",
+    "groups": [
+      {
+        "title": "Core",
+        "items": ["React", "Next.js", "TypeScript", "Node.js (SSR/BFF)"]
+      },
+      {
+        "title": "Mobile / Cross-domain",
+        "items": ["React Native", "Unity3D", "C++"]
+      },
+      {
+        "title": "Data Visualization",
+        "items": [
+          "Three.js (3D)",
+          "AntV",
+          "ECharts",
+          "D3.js",
+          "Canvas",
+          "SVG",
+          "WebGL internals"
+        ]
+      },
+      {
+        "title": "AI in Production",
+        "items": ["ChatBI architecture", "Data Agent workflows", "Prompt tuning", "Streaming UX"]
+      },
+      {
+        "title": "Engineering",
+        "items": ["Turborepo", "Vite", "Webpack", "Open-source maintenance", "CI/CD automation"]
+      }
+    ]
+  },
+  "education": {
+    "kicker": "Education",
+    "title": "Education & Languages",
+    "schoolPeriod": "Sep 2008 — Jun 2012",
+    "school": "Xi'an University of Finance and Economics",
+    "degree": "E-Commerce · Bachelor's",
+    "languagesTitle": "Languages",
+    "languagesDesc": "English: strong reading and writing; comfortable in everyday conversation."
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "Reach out by email or phone for further discussion."
+  },
+  "footer": {
+    "tagline": "Personal portfolio · Updated periodically"
+  },
+  "theme": {
+    "dark": "dark",
+    "light": "light",
+    "switchTo": "Switch to {theme} theme",
+    "ariaLabel": "Switch to {next} theme, current theme is {current}"
+  },
+  "locale": {
+    "switchAria": "Switch language",
+    "zh": "中文",
+    "en": "English"
+  },
+  "profile": {
+    "photoAlt": "Liu Huan"
+  }
+}

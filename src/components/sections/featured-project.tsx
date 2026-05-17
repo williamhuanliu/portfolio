@@ -3,15 +3,16 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { useDictionary } from "@/i18n/dictionary-provider";
 
 const REPO = "https://github.com/tencentmusic/supersonic";
 
 export function FeaturedProjectSection() {
+  const { dict } = useDictionary();
+  const t = dict.project;
+
   return (
-    <section
-      id="project"
-      className="section-shell border-t border-[var(--border-subtle)]"
-    >
+    <section id="project" className="section-shell border-t border-[var(--border-subtle)]">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,17 +22,15 @@ export function FeaturedProjectSection() {
           className="mb-10 flex flex-col justify-between gap-6 lg:flex-row lg:items-end"
         >
           <div>
-            <p className="section-kicker">Open Source</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Supersonic · ChatBI
-            </h2>
+            <p className="section-kicker">{t.kicker}</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">{t.title}</h2>
           </div>
           <p className="max-w-md text-[var(--text-secondary)] leading-relaxed">
-            腾讯音乐开源 ChatBI 项目，融合 Headless BI 与对话式分析。更完整的职责与架构细节见{" "}
+            {t.subtitlePrefix}{" "}
             <Link href="#experience" className="text-[var(--accent)] underline-offset-4 hover:underline">
-              工作经历
+              {t.subtitleLink}
             </Link>
-            。
+            {t.subtitleSuffix}
           </p>
         </motion.div>
 
@@ -45,17 +44,14 @@ export function FeaturedProjectSection() {
           <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">
             <div className="max-w-2xl space-y-6">
               <div className="inline-flex items-center rounded-full border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-3 py-1 font-mono text-[11px] tracking-wide text-[var(--text-secondary)]">
-                前端负责人 · 腾讯音乐
+                {t.badge}
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                语义模型驱动的对话式数据分析体验
-              </h3>
+              <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">{t.heading}</h3>
               <p className="text-sm leading-relaxed text-[var(--text-secondary)] sm:text-base">
-                主导特性规划与版本路线、整体前端架构及对话式分析体验；语义模型驱动的动态配置与
-                Headless BI 理念下的展示层解耦。
+                {t.desc}
               </p>
               <div className="grid max-w-xl grid-cols-3 gap-3">
-                {["Headless BI", "ChatBI", "Data Agent"].map((item) => (
+                {t.tags.map((item) => (
                   <div
                     key={item}
                     className="rounded-2xl border border-[var(--surface-border-faint)] bg-[var(--surface-soft)] p-4"
@@ -73,14 +69,14 @@ export function FeaturedProjectSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--text-primary)] px-6 py-3 text-sm font-medium text-[var(--bg-base)] transition-opacity hover:opacity-90"
               >
-                查看仓库
+                {t.viewRepo}
                 <ExternalLink className="h-4 w-4" strokeWidth={1.5} />
               </Link>
               <Link
                 href="#experience"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--border-subtle)] px-6 py-3 text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--border-glow)] hover:text-[var(--text-primary)]"
               >
-                相关经历
+                {t.relatedExperience}
               </Link>
             </div>
           </div>

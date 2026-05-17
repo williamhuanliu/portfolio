@@ -4,8 +4,12 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 import { ProfilePhoto } from "@/components/profile-photo";
+import { useDictionary } from "@/i18n/dictionary-provider";
 
 export function HeroSection() {
+  const { dict } = useDictionary();
+  const t = dict.hero;
+
   return (
     <section className="relative min-h-[100dvh] overflow-hidden">
       <div className="pointer-events-none absolute inset-0 z-0 gradient-radial" />
@@ -21,7 +25,7 @@ export function HeroSection() {
                 transition={{ delay: 0.08, duration: 0.5 }}
                 className="font-mono text-xs tracking-[0.22em] text-[var(--accent)] uppercase sm:text-sm"
               >
-                Front-end Architecture · Platform Engineering
+                {t.kicker}
               </motion.p>
 
               <motion.h1
@@ -30,9 +34,9 @@ export function HeroSection() {
                 transition={{ delay: 0.12, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
                 className="mt-5 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-[2.75rem]"
               >
-                <span className="text-[var(--text-primary)]">刘欢</span>
+                <span className="text-[var(--text-primary)]">{t.name}</span>
                 <span className="text-[var(--text-tertiary)]"> · </span>
-                <span className="text-gradient">前端架构与平台工程</span>
+                <span className="text-gradient">{t.title}</span>
               </motion.h1>
 
               <motion.p
@@ -41,7 +45,7 @@ export function HeroSection() {
                 transition={{ delay: 0.18, duration: 0.5 }}
                 className="mt-3 text-base text-[var(--text-secondary)]"
               >
-                资深前端工程师 / 前端架构负责人
+                {t.role}
               </motion.p>
 
               <motion.p
@@ -68,14 +72,11 @@ export function HeroSection() {
                 transition={{ delay: 0.28, duration: 0.55 }}
                 className="mt-8 space-y-4 text-[15px] leading-relaxed text-[var(--text-secondary)] sm:text-base"
               >
+                <p>{t.bio1}</p>
                 <p>
-                  拥有 10 年以上前端开发与架构经验，长期参与数据中台、BI
-                  与复杂业务系统建设，具备大规模产品从 0 到 1 的全链路实战背景。
-                </p>
-                <p>
-                  担任腾讯音乐开源 ChatBI 项目{" "}
+                  {t.bio2Prefix}{" "}
                   <strong className="font-medium text-[var(--text-primary)]">Supersonic</strong>{" "}
-                  前端负责人；在平台化、BI 与 AI Data Agent 方向有完整落地经验，实践大语言模型在分析场景下的工作流编排。
+                  {t.bio2Suffix}
                 </p>
               </motion.div>
 
@@ -89,19 +90,19 @@ export function HeroSection() {
                   href="#experience"
                   className="inline-flex items-center justify-center rounded-full bg-[var(--text-primary)] px-6 py-2.5 text-sm font-medium text-[var(--bg-base)] transition-opacity hover:opacity-90"
                 >
-                  工作经历
+                  {t.ctaExperience}
                 </Link>
                 <Link
                   href="#project"
                   className="inline-flex items-center justify-center rounded-full border border-[var(--border-subtle)] px-6 py-2.5 text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--border-glow)] hover:text-[var(--text-primary)]"
                 >
-                  开源项目
+                  {t.ctaProject}
                 </Link>
                 <Link
                   href="#expertise"
                   className="inline-flex items-center justify-center rounded-full border border-[var(--border-subtle)] px-6 py-2.5 text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--border-glow)] hover:text-[var(--text-primary)]"
                 >
-                  专业能力
+                  {t.ctaExpertise}
                 </Link>
               </motion.div>
             </div>
@@ -124,7 +125,7 @@ export function HeroSection() {
           >
             <Link
               href="#expertise"
-              aria-label="向下滚动"
+              aria-label={t.scrollAria}
               className="flex flex-col items-center gap-2 text-[var(--text-tertiary)] transition-colors hover:text-[var(--accent)]"
             >
               <span className="font-mono text-[10px] tracking-widest uppercase">Scroll</span>

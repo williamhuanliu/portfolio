@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "title": "刘欢 · 前端架构与工程化",
+    "description": "刘欢：10+ 年前端与架构，腾讯音乐 Supersonic ChatBI 前端负责人；曾任平安智慧城市高级前端。西安财经大学本科；方向涵盖平台工程、BI、开源与 AI Agent 等。",
+    "keywords": [
+      "前端架构",
+      "腾讯音乐",
+      "Supersonic",
+      "ChatBI",
+      "平安智慧城市",
+      "平台工程",
+      "BI",
+      "AI Agent",
+      "Apache Superset",
+      "React Native",
+      "Three.js"
+    ]
+  },
+  "nav": {
+    "expertise": "专长",
+    "experience": "经历",
+    "project": "开源",
+    "skills": "技能",
+    "education": "教育",
+    "contact": "联系"
+  },
+  "hero": {
+    "kicker": "Front-end Architecture · Platform Engineering",
+    "name": "刘欢",
+    "title": "前端架构与平台工程",
+    "role": "资深前端工程师 / 前端架构负责人",
+    "bio1": "拥有 10 年以上前端开发与架构经验，长期参与数据中台、BI 与复杂业务系统建设，具备大规模产品从 0 到 1 的全链路实战背景。",
+    "bio2Prefix": "担任腾讯音乐开源 ChatBI 项目",
+    "bio2Suffix": "前端负责人；在平台化、BI 与 AI Data Agent 方向有完整落地经验，实践大语言模型在分析场景下的工作流编排。",
+    "ctaExperience": "工作经历",
+    "ctaProject": "开源项目",
+    "ctaExpertise": "专业能力",
+    "scrollAria": "向下滚动"
+  },
+  "expertise": {
+    "kicker": "Expertise",
+    "title": "专业能力",
+    "subtitle": "产品规划、交互与工程一体推进，让复杂数据能力以清晰、可扩展的方式落地。",
+    "items": [
+      {
+        "title": "复杂平台架构",
+        "desc": "主导数据中台与 BI 平台前端架构演进，沉淀 Schema-Driven 可视化体系，支撑多业务线分析决策。"
+      },
+      {
+        "title": "AI Data Agent",
+        "desc": "设计 Agent 工作流引擎，串联取数、图表匹配与报告生成，提升分析链路的自动化程度。"
+      },
+      {
+        "title": "LLM 工作流",
+        "desc": "在数据分析场景中连接语义层、查询与呈现，优化大模型编排的体验、稳定性与可控性。"
+      },
+      {
+        "title": "开源项目建设",
+        "desc": "担任腾讯音乐 Supersonic 开源前端负责人，推进 ChatBI 产品体验、前端架构与社区可维护性。"
+      }
+    ]
+  },
+  "experience": {
+    "kicker": "Experience",
+    "title": "工作经历",
+    "subtitle": "腾讯音乐期间覆盖企业级 BI、AI Data Agent 与开源 Supersonic；此前于平安智慧城市负责政务级 BI 与智慧教育跨端应用。",
+    "tencent": {
+      "period": "2020.08 — 至今",
+      "company": "腾讯音乐",
+      "role": "资深前端工程师",
+      "roleSub": "前端架构负责人",
+      "coreTag": "核心业务：企业级 BI 平台与 AI Data Agent",
+      "bullets": [
+        "产品规划：主导核心业务需求定义与交互原型，推动技术方案与业务目标对齐。",
+        "平台架构：建设企业级 BI 前端体系与 Schema Driven 可视化组件，支撑多业务线分析决策。",
+        "Agent 闭环：设计工作流引擎，串联取数、图表匹配与报告生成，提升分析自动化程度。"
+      ],
+      "ossTitle": "开源项目：Supersonic 前端负责人",
+      "ossBullets": [
+        "产品规划：制定开源项目特性与版本路线，持续优化 ChatBI 交互体验。",
+        "架构设计：基于 Headless BI 设计语义模型驱动配置体系，解耦业务逻辑与展示层。",
+        "AI 交互：实现对话式分析链路，支持流式渲染、多轮上下文与图表推荐。"
+      ]
+    },
+    "pingan": {
+      "period": "2016.08 — 2020.07",
+      "company": "平安智慧城市",
+      "role": "高级前端工程师",
+      "biTag": "政务级 BI 系统：智慧城市大数据驾驶舱",
+      "biBullets": [
+        "源码重构：改造 Apache Superset 插件层、布局引擎与数据探索模块，增强自助分析能力。",
+        "可视化工程：使用 Three.js 与 D3.js 定制 3D 组件和动态图表，兼顾表现力与渲染性能。"
+      ],
+      "appTag": "智慧教育 APP",
+      "appBullets": [
+        "跨端开发：基于 React Native 从 0 到 1 搭建 APP 架构，完成 iOS / Android 双端交付。",
+        "性能调优：优化渲染周期与原生桥接，解决长列表滚动卡顿和多媒体加载瓶颈。"
+      ]
+    },
+    "earlier": {
+      "kicker": "Earlier",
+      "title": "早期职业经历",
+      "period": "2012.07 — 2016.08",
+      "roles": [
+        {
+          "period": "2014.08 — 2016.08",
+          "org": "上海奇赋网络科技有限公司",
+          "role": "Web 前端开发",
+          "desc": "负责企业级 Web 应用的研发与交付。"
+        },
+        {
+          "period": "2013.06 — 2014.07",
+          "org": "上海越途网络科技有限公司",
+          "role": "Unity3D 手机游戏开发",
+          "desc": "负责核心玩法逻辑实现。"
+        },
+        {
+          "period": "2012.07 — 2013.06",
+          "org": "上海微电子装备有限公司",
+          "role": "C++ 软件开发",
+          "desc": "负责半导体精密设备控制软件的研发工作。"
+        }
+      ]
+    }
+  },
+  "project": {
+    "kicker": "Open Source",
+    "title": "Supersonic · ChatBI",
+    "subtitlePrefix": "腾讯音乐开源 ChatBI 项目，融合 Headless BI 与对话式分析。更完整的职责与架构细节见",
+    "subtitleLink": "工作经历",
+    "subtitleSuffix": "。",
+    "badge": "前端负责人 · 腾讯音乐",
+    "heading": "语义模型驱动的对话式数据分析体验",
+    "desc": "主导特性规划与版本路线、整体前端架构及对话式分析体验；语义模型驱动的动态配置与 Headless BI 理念下的展示层解耦。",
+    "tags": ["Headless BI", "ChatBI", "Data Agent"],
+    "viewRepo": "查看仓库",
+    "relatedExperience": "相关经历"
+  },
+  "skills": {
+    "kicker": "Stack",
+    "title": "核心技能",
+    "groups": [
+      {
+        "title": "核心技术",
+        "items": ["React", "Next.js", "TypeScript", "Node.js (SSR/BFF)"]
+      },
+      {
+        "title": "移动端 / 跨领域",
+        "items": ["React Native", "Unity3D", "C++"]
+      },
+      {
+        "title": "数据可视化",
+        "items": [
+          "Three.js（3D 组件）",
+          "AntV",
+          "ECharts",
+          "D3.js",
+          "Canvas",
+          "SVG",
+          "WebGL 渲染机理"
+        ]
+      },
+      {
+        "title": "AI 落地应用",
+        "items": ["ChatBI 架构设计", "Data Agent 工作流", "Prompt 调优", "流式交互"]
+      },
+      {
+        "title": "工程体系",
+        "items": ["Turborepo", "Vite", "Webpack", "开源社区维护", "自动化 CI/CD"]
+      }
+    ]
+  },
+  "education": {
+    "kicker": "Education",
+    "title": "教育背景与语言",
+    "schoolPeriod": "2008.09 — 2012.06",
+    "school": "西安财经大学",
+    "degree": "电子商务 · 本科",
+    "languagesTitle": "语言能力",
+    "languagesDesc": "英语：具有良好的英语读写能力以及日常口语能力。"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "联系方式",
+    "subtitle": "如需进一步沟通，可通过邮件或电话与我联系。"
+  },
+  "footer": {
+    "tagline": "个人作品集 · 信息持续更新"
+  },
+  "theme": {
+    "dark": "深色",
+    "light": "浅色",
+    "switchTo": "切换到{theme}主题",
+    "ariaLabel": "切换到{next}主题，当前为{current}主题"
+  },
+  "locale": {
+    "switchAria": "切换语言",
+    "zh": "中文",
+    "en": "English"
+  },
+  "profile": {
+    "photoAlt": "刘欢"
+  }
+}

@@ -2,17 +2,21 @@
 
 import { motion } from "framer-motion";
 import { ThemeToggle } from "@/components/theme-toggle";
-
-const nav = [
-  { href: "#expertise", label: "专长" },
-  { href: "#experience", label: "经历" },
-  { href: "#project", label: "开源" },
-  { href: "#skills", label: "技能" },
-  { href: "#education", label: "教育" },
-  { href: "#contact", label: "联系" },
-];
+import { LocaleSwitcher } from "@/components/locale-switcher";
+import { useDictionary } from "@/i18n/dictionary-provider";
 
 export function SiteHeader() {
+  const { dict } = useDictionary();
+
+  const nav = [
+    { href: "#expertise", label: dict.nav.expertise },
+    { href: "#experience", label: dict.nav.experience },
+    { href: "#project", label: dict.nav.project },
+    { href: "#skills", label: dict.nav.skills },
+    { href: "#education", label: dict.nav.education },
+    { href: "#contact", label: dict.nav.contact },
+  ];
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -8 }}
@@ -26,10 +30,10 @@ export function SiteHeader() {
             href="#"
             className="text-sm font-medium tracking-tight text-[var(--text-primary)] transition-colors hover:text-[var(--accent)]"
           >
-            刘欢
+            {dict.hero.name}
           </a>
-          <div className="flex min-w-0 items-center gap-4 sm:gap-6">
-            <nav className="flex gap-6 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-8 [&::-webkit-scrollbar]:hidden">
+          <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+            <nav className="flex gap-5 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-7 [&::-webkit-scrollbar]:hidden">
               {nav.map((item) => (
                 <a
                   key={item.href}
@@ -40,6 +44,7 @@ export function SiteHeader() {
                 </a>
               ))}
             </nav>
+            <LocaleSwitcher />
             <ThemeToggle />
           </div>
         </div>

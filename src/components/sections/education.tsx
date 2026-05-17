@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap, Languages } from "lucide-react";
+import { useDictionary } from "@/i18n/dictionary-provider";
 
 export function EducationSection() {
+  const { dict } = useDictionary();
+  const t = dict.education;
+
   return (
-    <section
-      id="education"
-      className="section-shell border-t border-[var(--border-subtle)]"
-    >
+    <section id="education" className="section-shell border-t border-[var(--border-subtle)]">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,10 +18,8 @@ export function EducationSection() {
           transition={{ duration: 0.5 }}
           className="mb-12 max-w-xl"
         >
-          <p className="section-kicker">Education</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            教育背景与语言
-          </h2>
+          <p className="section-kicker">{t.kicker}</p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">{t.title}</h2>
         </motion.div>
 
         <div className="grid gap-5 lg:grid-cols-2">
@@ -35,9 +34,9 @@ export function EducationSection() {
               <GraduationCap className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
             </div>
             <div>
-              <p className="font-mono text-xs text-[var(--accent)]">2008.09 — 2012.06</p>
-              <h3 className="mt-2 text-lg font-semibold tracking-tight">西安财经大学</h3>
-              <p className="mt-1 text-sm text-[var(--text-secondary)]">电子商务 · 本科</p>
+              <p className="font-mono text-xs text-[var(--accent)]">{t.schoolPeriod}</p>
+              <h3 className="mt-2 text-lg font-semibold tracking-tight">{t.school}</h3>
+              <p className="mt-1 text-sm text-[var(--text-secondary)]">{t.degree}</p>
             </div>
           </motion.article>
 
@@ -52,9 +51,9 @@ export function EducationSection() {
               <Languages className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
             </div>
             <div>
-              <h3 className="text-lg font-semibold tracking-tight">语言能力</h3>
+              <h3 className="text-lg font-semibold tracking-tight">{t.languagesTitle}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]">
-                英语：具有良好的英语读写能力以及日常口语能力。
+                {t.languagesDesc}
               </p>
             </div>
           </motion.article>

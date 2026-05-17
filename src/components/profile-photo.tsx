@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useDictionary } from "@/i18n/dictionary-provider";
 
 const PHOTO_CANDIDATES = ["/photo.png", "/photo.jpg", "/photo.webp"] as const;
 const FALLBACK_PATH = "/avatar-fallback.svg";
@@ -11,6 +12,7 @@ const FALLBACK_PATH = "/avatar-fallback.svg";
  * 从 `public/` 依次尝试 png / jpg / webp，失败则 `avatar-fallback.svg`。
  */
 export function ProfilePhoto({ className = "" }: { className?: string }) {
+  const { dict } = useDictionary();
   const [candidateIndex, setCandidateIndex] = useState(0);
   const acceptErrorsRef = useRef(false);
 
@@ -54,7 +56,7 @@ export function ProfilePhoto({ className = "" }: { className?: string }) {
         <img
           key={activeSrc}
           src={activeSrc}
-          alt="刘欢"
+          alt={dict.profile.photoAlt}
           width={512}
           height={512}
           loading="eager"

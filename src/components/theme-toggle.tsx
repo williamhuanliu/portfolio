@@ -2,6 +2,8 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useDictionary } from "@/i18n/dictionary-provider";
+import { formatMessage } from "@/i18n/format";
 
 type ThemePreference = "system" | "light" | "dark";
 type ResolvedTheme = "light" | "dark";
@@ -27,6 +29,9 @@ function resolveTheme(theme: ThemePreference): ResolvedTheme {
 }
 
 export function ThemeToggle() {
+  const { dict } = useDictionary();
+  const themeLabels = dict.theme;
+
   const [theme, setTheme] = useState<ThemePreference>("system");
   const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("dark");
 
@@ -53,14 +58,18 @@ export function ThemeToggle() {
   const nextTheme: Exclude<ThemePreference, "system"> =
     resolvedTheme === "dark" ? "light" : "dark";
   const Icon = nextTheme === "dark" ? Moon : Sun;
-  const currentLabel = resolvedTheme === "dark" ? "深色" : "浅色";
-  const nextLabel = nextTheme === "dark" ? "深色" : "浅色";
+  const currentLabel = themeLabels[resolvedTheme];
+  const nextLabel = themeLabels[nextTheme];
+  const ariaLabel = formatMessage(themeLabels.ariaLabel, {
+    next: nextLabel,
+    current: currentLabel,
+  });
 
   return (
     <button
       type="button"
-      aria-label={`切换到${nextLabel}主题，当前为${currentLabel}主题`}
-      title={`切换到${nextLabel}主题`}
+      aria-label={ariaLabel}
+      title={formatMessage(themeLabels.switchTo, { theme: nextLabel })}
       onClick={() => {
         setTheme(nextTheme);
         setResolvedTheme(nextTheme);

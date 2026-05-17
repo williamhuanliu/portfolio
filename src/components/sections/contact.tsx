@@ -3,13 +3,14 @@
 import { motion } from "framer-motion";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import { useDictionary } from "@/i18n/dictionary-provider";
 
 export function ContactSection() {
+  const { dict } = useDictionary();
+  const t = dict.contact;
+
   return (
-    <section
-      id="contact"
-      className="section-shell border-t border-[var(--border-subtle)]"
-    >
+    <section id="contact" className="section-shell border-t border-[var(--border-subtle)]">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,12 +19,12 @@ export function ContactSection() {
           transition={{ duration: 0.5 }}
           className="glass-panel relative overflow-hidden rounded-[2rem] px-8 py-14 text-center sm:px-16"
         >
-          <p className="section-kicker relative">Contact</p>
+          <p className="section-kicker relative">{t.kicker}</p>
           <h2 className="relative mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
-            联系方式
+            {t.title}
           </h2>
           <p className="relative mx-auto mt-4 max-w-md text-sm text-[var(--text-secondary)] leading-relaxed">
-            如需进一步沟通，可通过邮件或电话与我联系。
+            {t.subtitle}
           </p>
 
           <div className="relative mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
@@ -41,9 +42,7 @@ export function ContactSection() {
               className="inline-flex max-w-full items-center gap-3 rounded-full border border-[var(--surface-border)] bg-[var(--surface-soft)] px-5 py-3 text-[var(--text-primary)] transition-colors hover:border-[var(--border-glow)] hover:text-[var(--accent)]"
             >
               <Phone className="h-5 w-5 text-[var(--accent)]" strokeWidth={1.5} />
-              <span className="font-mono text-sm tracking-wide sm:text-base">
-                13682370883
-              </span>
+              <span className="font-mono text-sm tracking-wide sm:text-base">13682370883</span>
             </Link>
           </div>
         </motion.div>
